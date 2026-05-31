@@ -28,7 +28,7 @@ MATCHZY_FILE="MatchZy-${MATCHZY_VERSION}.zip"
 MATCHZY_URL="https://github.com/shobhit-pathak/MatchZy/releases/download/${MATCHZY_VERSION}/${MATCHZY_FILE}"
 
 # --- Ścieżki zgodne z runbookiem ---
-SERVER_ROOT="/home/cs2/cs2-server"
+SERVER_ROOT="/home/cs2/serverfiles"
 CSGO_DIR="${SERVER_ROOT}/game/csgo"
 ADDONS_DIR="${CSGO_DIR}/addons"
 VALVE_BIN="${SERVER_ROOT}/game/bin/linuxsteamrt64"
