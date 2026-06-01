@@ -1,0 +1,45 @@
+{
+  "matchid": "pp_vs_up",
+  "team1": {
+    "name": "Politechnika Poznańska",
+    "tag": "PP",
+    "players": {
+      "76561198257651047": "Pr3lo",
+      "76561198352290946": "qwe-",
+      "76561198271687926": "Piku",
+      "76561198272018634": "Dejziak",
+      "76561198136652069": "rex_"
+    }
+  },
+  "team2": {
+    "name": "Uniwersytet Przyrodniczy",
+    "tag": "UP",
+    "players": {
+      "76561199238996732": "GAHAHEQUA",
+      "76561198879584360": "francishek",
+      "76561199017695493": "MrM9ENx1999",
+      "76561198337672807": "XdBarteG",
+      "76561198212361012": "321Bungeee",
+      "76561198281315225": "witteek"
+    }
+  },
+  "num_maps": 3,
+  "maplist": [
+    "de_nuke",
+    "de_overpass",
+    "de_inferno"
+  ],
+  "map_sides": [
+    "team1_ct",
+    "team2_ct",
+    "knife"
+  ],
+  "spectators": {
+  },
+  "clinch_series": true,
+  "players_per_team": 5,
+  "cvars": {
+    "hostname": "AMPiW CS2 2026",
+    "mp_friendlyfire": "1"
+  }
+}
