@@ -114,6 +114,7 @@ else
 fi
 
 echo "=== Serwer gotowy na wgranie nowych pluginow ==="
+```
 4. Pliki Konfiguracyjne Serwera
 server.cfg
 Lokalizacja: /home/cs2/serverfiles/game/csgo/cfg/server.cfg
@@ -191,7 +192,7 @@ JSON
 Pliki tworzone przed turniejem na podstawie zebranych SteamID64 graczy[cite: 1]. Pola maplist oraz map_sides są uzupełniane przez sędziego niezwłocznie po zakończeniu fazy veto[cite: 1].
 
 Lokalizacja pliku: /home/cs2/serverfiles/game/csgo/cfg/MatchZy/final_cdv_vs_pp.json
-
+```
 JSON
 {
   "num_maps": 1,[cite: 1]
@@ -231,6 +232,7 @@ JSON
   "playout": false,[cite: 1]
   "scrim": false[cite: 1]
 }
+```
 Lista Stringów Map (Do wpisania w JSON):
 Mirage: de_mirage
 
