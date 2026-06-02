@@ -155,8 +155,7 @@ Zawartość przeniesiona bezpośrednio z briefu operacyjnego bez żadnych modyfi
 hostname          "AMPiW CS2 2026 - CDV Poznan"
 sv_password       ""              // brak hasła — gracze łączą się swobodnie przez IP
 sv_cheats         0
-sv_lan            1               // LAN fizyczny w sali — obowiązkowe
-
+sv_lan            0               
 // ─── RCON ───────────────────────────────────────────
 rcon_password     "TWOJE_HASLO_RCON"   // zmień na unikalne hasło
 
