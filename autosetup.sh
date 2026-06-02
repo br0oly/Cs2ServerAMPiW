@@ -16,7 +16,7 @@ SCRIPTNAME="[CDV_CS2Server_AUTOSETUP]"
 # Runbook zakłada: użytkownik=cs2, katalog=/home/cs2/cs2-server
 SERVER_USER="cs2"
 SERVER_HOME="/home/${SERVER_USER}"
-SERVER_ROOT="${SERVER_HOME}/cs2-server"
+SERVER_ROOT="${SERVER_HOME}/serverfiles"
 CSGO_DIR="${SERVER_ROOT}/game/csgo"
 ADDONS_DIR="${CSGO_DIR}/addons"
 VALVE_BIN="${SERVER_ROOT}/game/bin/linuxsteamrt64"
