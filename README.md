@@ -1,19 +1,30 @@
 # AMPiW CS2 2026 - Dokumentacja i Zarządzanie Serwerem Turniejowym
-==================================================================
 
-Repozytorium zawiera kompletny ekosystem skryptów automatyzujących, plików konfiguracyjnych oraz predefiniowanych szablonów meczowych MatchZy (`*.json`) przygotowanych pod turniej esportowy AMPiW CS2 2026 na uczelni Collegium Da Vinci w Poznaniu[cite: 1].
+Repozytorium zawiera kompletny ekosystem skryptów automatyzujących, plików konfiguracyjnych oraz predefiniowanych szablonów meczowych MatchZy (`*.json`) przygotowanych pod turniej esportowy AMPiW CS2 2026 na uczelni Collegium Da Vinci w Poznaniu.
 
 Struktura została w pełni dostosowana do wytycznych operacyjnych briefu i zoptymalizowana pod kątem lokalnej sieci fizycznej (LAN) w sali A.003, integracji z systemami transmisji (Live Hud Manager / Scout AI) oraz sprawnego sędziowania za pomocą RCON i wtyczki CounterStrikeSharp.
 
 ---
 
-## Metadane Operacyjne Turnieju
+## Dane Turnieju
 * **Turniej:** 09.06.2026 (wtorek)[cite: 1]
 * **Sala:** A.003, Collegium Da Vinci[cite: 1]
 * **Plugin:** MatchZy 0.8.15 + CounterStrikeSharp
 * **Veto:** fizyczne — sędzia ogląda screen/tablicę i sam wpisuje mapy do pliku JSON
 
 ---
+
+## Najważniejsze pliki konfiguracyjne:
+1. Konfiguracja startowa LinuxGSM
+  Nazwa pliku: `cs2server.cfg`
+  Ścieżka: `/home/cs2/lgsm/config-lgsm/cs2server/cs2server.cfg`
+  Za co odpowiada: To plik "zewnętrzny" wobec samej gry. Definiuje on parametry startowe, z jakimi Linux ma w ogóle odpalić proces serwera. Ustala porty sieciowe,     hasło RCON, bazową widoczność serwera (`sv_lan`), włącza moduł GOTV oraz alokuje sloty dla graczy i widzów.
+  Kiedy się odpala: Tylko raz, podczas wpisywania komendy `./cs2server start` lub `restart`.
+2. Globalna konfiguracja wtyczki MatchZy
+   Nazwa pliku: `config.cfg`
+   Ścieżka: `/home/cs2/serverfiles/game/csgo/cfg/MatchZy/config.cfg`
+   Za co odpowiada: Odpowiada za "tożsamość" turnieju i zachowanie samej wtyczki zarządzającej. To tutaj siedzi Twój branding czatu ([AMPiW CDV 2026]), prefiks        sędziowski, blokada spamu komunikatów o gotowości, globalne limity czasu przerw taktycznych oraz domyślne limity przerw technicznych.
+   Kiedy się odpala: Automatycznie przy starcie serwera (zaraz po załadowaniu wtyczki) oraz przy każdej zmianie mapy. Możesz go też wymusić ręcznie komendą exec       MatchZy/config.cfg.
 
 ## Podsumowanie Roli Administratora
 Jesteś głęboko w tle — gracze Cię nie widzą, ale bez Ciebie nie ma turnieju. Uruchamiasz i zarządzasz serwerem CS2[cite: 1], ładujesz konfiguracje meczów, obsługujesz RCON w locie, reagujesz na awarie i archiwizujesz dema po każdym meczu. Szymon i Head Admin mają do Ciebie bezpośrednią linię przez Hollyland.
