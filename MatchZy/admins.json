@@ -1,4 +1,8 @@
 {
-  "76561198416219239": "Admin",
-  //"steamid64": "nick/nazwa gracza/obiektu"
+  "Admin": {
+    "identity": "76561198416219239":,
+    "flags": [
+      "@css/root"
+    ]
+  }
 }
